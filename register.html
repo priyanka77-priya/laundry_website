@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Register Login Widget template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login Signup Responsive web template, SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Jura:400,300,500,600' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+</head>
+<script type="text/javascript"> 
+function reg()
+{
+var fn = document.forms["f1"]["fn"].value;
+var ln = document.forms["f1"]["ln"].value;
+var ph = document.forms["f1"]["ph"].value;
+var email = document.forms["f1"]["email"].value;
+var pwd1 = document.forms["f1"]["pwd"].value;
+var pwd2 = document.forms["f1"]["pwd2"].value;
+if (fn == "" && ln == "" && ph == "" && email == "" && pwd1 == "" && pwd2 == "")
+{
+alert("Please enter details of the form..");
+}
+else if (fn == "")
+{
+alert("Please enter FirstName..");
+}
+else if (ln == "")
+{
+alert("Please enter LastName..");
+}
+else if (ph == "")
+{
+alert("Please enter Phone Number..");
+}
+else if (email == "")
+{
+alert("Please enter Email Address..");
+}
+else if (pwd1 == "")
+{
+alert("Please enter Password..");
+}
+else if (pwd2 == "")
+{
+alert("Please Re-enter Password..");
+}
+else{
+var num=document.f1.ph.value; 
+var p1=document.f1.pwd.value;  
+var p2=document.f1.pwd2.value;  
+if (isNaN(num)){  
+alert("Please enter Numeric Value Only");
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";   
+}
+if (p1==p2){  
+open("home.html");
+}  
+else{  
+alert("password must be same!");  
+}  
+}
+}
+</script>
+<body><p align="center">
+	
+	<!-- main -->
+	<div class="main">
+	
+<div class="agile">
+			<div class="signin-form profile">
+				<p align="center"><h3>Register</h3>
+				
+				<div class="register-form">
+					<form action="#" method="post" name="f1">
+<font color="white">Select Country:</font>
+<select name="Country:"> 
+    <option value="guntur">Guntur</option>  
+    <option value="vijayawada">Vijayawada</option>  
+    <option value="visakhapatnam">Visakhapatnam</option>  
+    <option value="chirala">Chirala</option>  
+    <option value="ongole">Ongole</option> 
+</select> 
+                                                <input type="text" name="fn" placeholder="Firstname" required="">
+                                                <input type="text" name="ln" placeholder="Lastname" required="">
+                                                <input type="text" name="ph" placeholder="PhoneNumber" required="">
+						<input type="text" name="email" placeholder="E-mail" required="">
+						<input type="password" name="pwd" placeholder="Password" required="">
+						<input type="password" name="pwd2" placeholder="Confirm Password" required="">
+						<input type="submit" value="REGISTER" onclick="reg()">
+					</form>
+				</div>
+				<p><a href="#"> By clicking register, I agree to your terms</a></p>
+			</div>
+		</div>
+		<div class="clear"></div></p>
+		<!--//signin-form-->	
+	</div></p>
+	</body>
+</html>					
